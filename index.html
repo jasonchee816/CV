@@ -110,21 +110,32 @@
                                                 <hr />
                                             </div>
                                             <div class="col-12">
-                                                <div class="row mb-1">
-                                                    <div class="col-12">
-                                                        <h6>Chinese: Mother Tongue</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-1">
-                                                    <div class="col-12">
-                                                        <h6>English: Fluent</h6>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-1">
-                                                    <div class="col-12">
-                                                        <h6>Malay: Conversational</h6>
-                                                    </div>
-                                                </div>
+                                                <table style="width:100%">
+                                                    <tr>
+                                                        <th>
+                                                            <h6>Chinese: </h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6>Mother Tongue</h6>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <h6>English: </h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6>Fluent</h6>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            <h6>Malay: </h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6>Conversational</h6>
+                                                        </th>
+                                                    </tr>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
@@ -136,41 +147,49 @@
 
                 <!--Right Page-->
                 <div class="rightPage(s) col-12 col-lg-6 pt-lg-3 mt-lg-3 d-block">
+
+
                     <div class="educationSection row">
-                        <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
-                            <h3>Education</h3>
+                        <a href="#eduSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
+                            <div class="row">
+                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                    <span class="titleCardText">Education</span>
+                                    <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row collapse" id="eduSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+                                <div class="col-12 mb-3">
+                                    <h6>Bachelor of Science (Honours) Software Engineering</h6>
+                                    <p>May 2020 - June 2023 <br>Universiti Tunku Abdul Rahman,
+                                        Sungai
+                                        Long
+                                        <br>CGPA:
+                                        3.8204
+                                    </p>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <h6>Foundation in Science</h6>
+                                    <p>May 2019 - May 2020 <br>Universiti Tunku Abdul Rahman,
+                                        Sungai
+                                        Long
+                                        <br>CGPA:
+                                        3.9468
+                                    </p>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <h6>Sijil Pelajaran Malaysia (SPM)</h6>
+                                    <p>January 2014 - October 2018 <br>SMJK Yu Hua
+                                        <br>Results:
+                                        4A+ 3A 2B+ 1B
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 ps-3">
-                            <div class="col-12 mb-3">
-                                <h6>Bachelor of Science (Honours) Software Engineering</h6>
-                                <p>May 2020 - June 2023 <br>Universiti Tunku Abdul Rahman,
-                                    Sungai
-                                    Long
-                                    <br>CGPA:
-                                    3.8204
-                                </p>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <h6>Foundation in Science</h6>
-                                <p>May 2019 - May 2020 <br>Universiti Tunku Abdul Rahman,
-                                    Sungai
-                                    Long
-                                    <br>CGPA:
-                                    3.9468
-                                </p>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <h6>Sijil Pelajaran Malaysia (SPM)</h6>
-                                <p>January 2014 - October 2018 <br>SMJK Yu Hua
-                                    <br>Results:
-                                    4A+ 3A 2B+ 1B
-                                </p>
-                            </div>
-                        </div>
-
-
-
                     </div>
+
+
                     <div class="workingExpSection row mt-3">
                         <a href="#workExpSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
@@ -181,49 +200,140 @@
                             </div>
                         </a>
 
+                        <div class="row collapse" id="workExpSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+                                <div class="row mb-1">
+                                    <div class="col-12 col-md-7">
+                                        <span class="jobTitle" style="white-space: nowrap;width:100%">Customer
+                                            Service Crew @ Buddy
+                                            Bits</span>
+                                    </div>
+                                    <div class="col-12 col-md-5 float-end">
+                                        <span class="small " style="white-space: nowrap;width:100%">(November 2018 -
+                                            November
+                                            2019)</span>
 
-                        <ul class=" collapse nav flex-column" style="margin-top:0;" id="workExpSubMenu">
-                            <li class="w-100">
-                                <a href="@Url.Action(" ManageProfile","Home")" class="nav-link px-2 align-middle">
-                                    <i class="bi bi-arrow-right" style="color:#fff;margin-right: 2.3rem;">
-                                    </i>
-                                    <span class="ms-4 d-none d-sm-inline py-0 small text-muted "
-                                        style="font-size:15px;">Profile</span>
-                                </a>
-                            </li>
-                            <li class="w-100 mt-2">
-                                <a href="@Url.Action(" Cheque","Home")" class="nav-link px-2 align-middle">
-                                    <i class="bi bi-arrow-right" style="color:#fff;margin-right: 2.3rem;">
-                                    </i>
-                                    <span class="d-none ms-4 d-sm-inline small py-0 text-muted "
-                                        style="font-size:15px;">Cheque Management</span>
-                                </a>
-                            </li>
-                            <li class="w-100 mt-2">
-                                <a href="@Url.Action(" CardSettings","Home")" class="nav-link px-2 align-middle">
-                                    <i class="bi bi-arrow-right" style="color:#fff;margin-right: 2.3rem;">
-                                    </i>
-                                    <span class="d-none ms-4 d-sm-inline small py-0 text-muted "
-                                        style="font-size:15px;">Card</span>
-                                </a>
-                            </li>
-                            <!-- @*<li class="w-100 mt-2">
-                                <a href="@Url.Action("lifestyleSettings","Home")"
-                                   class="nav-link px-2 align-middle">
-                                    <i class="bi bi-arrow-right" style="color:#fff;margin-right: 2.3rem;">
-                                    </i>
-                                    <span class="d-none ms-4 d-sm-inline small py-0 text-muted "
-                                          style="font-size:16px;">PB Lifestyle Debit Card</span>
-                                </a>
-                            </li>*@ -->
-                        </ul>
+                                    </div>
 
+                                </div>
+                                <div class="row ps-3">
+                                    <ul class="list-group" style="list-style:none">
+                                        <li class="jobDesc">
+                                            Promoted and recommended the restaurant best deals
+                                        </li>
+                                        <li class="jobDesc">
+                                            Ensured the cleanliness of the Front of House
+                                        </li>
+                                        <li class="jobDesc">
+                                            Provided great customer service
+                                        </li>
+                                        <li class="jobDesc">
+                                            Ensured Back of House understood
+                                            customer request and
+                                            customization of
+                                            food if any
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div class="techSkillSection row mt-3">
+                        <a href="#techSkillSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
+                            <div class="row">
+                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                    <span class="titleCardText">Technical Skills</span>
+                                    <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row collapse" id="techSkillSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+                                <div class="col-12 mb-3">
+                                    <h6>Bachelor of Science (Honours) Software Engineering</h6>
+                                    <p>May 2020 - June 2023 <br>Universiti Tunku Abdul Rahman,
+                                        Sungai
+                                        Long
+                                        <br>CGPA:
+                                        3.8204
+                                    </p>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <h6>Foundation in Science</h6>
+                                    <p>May 2019 - May 2020 <br>Universiti Tunku Abdul Rahman,
+                                        Sungai
+                                        Long
+                                        <br>CGPA:
+                                        3.9468
+                                    </p>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <h6>Sijil Pelajaran Malaysia (SPM)</h6>
+                                    <p>January 2014 - October 2018 <br>SMJK Yu Hua
+                                        <br>Results:
+                                        4A+ 3A 2B+ 1B
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="projectSection row mt-3">
+                        <a href="#projectSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
+                            <div class="row">
+                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                    <span class="titleCardText">Past Projects</span>
+                                    <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row collapse" id="projectSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="softSkillSection row mt-3">
+                        <a href="#softSkillSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
+                            <div class="row">
+                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                    <span class="titleCardText">Soft Skills</span>
+                                    <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row collapse" id="softSkillSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="awardsActivitiesSection row mt-3">
+                        <a href="#awardsSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
+                            <div class="row">
+                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                    <span class="titleCardText">Awards / Activities</span>
+                                    <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row collapse" id="adwardsSubMenu">
+                            <div class="col-12 ps-4 ps-lg-3">
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
         </div>
-
     </div>
 
 
@@ -238,6 +348,18 @@
 
 
     <script>
+
+        $(".collapse").on("show.bs.collapse", function () {
+            $(".collapse").not(this).collapse("hide");
+            $(this).siblings('a').children('div.row').children('div.titleDiv').addClass('bg-gradient');
+            $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+        });
+
+        $(".collapse").on("hide.bs.collapse", function () {
+            $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-gradient');
+
+            $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+        });
     </script>
 </body>
 

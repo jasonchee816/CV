@@ -12,4 +12,30 @@
 .titleCardText{
     font-size: 1.75rem!important;
     color: #212529;
+    font-weight: 500;
+}
+
+.a .titleDiv :hover{
+    background: #ce6370; 
+}
+
+
+.jobTitle{
+    font-size: 1rem!important;
+    color: #212529;
+    font-weight: 500;
+}
+
+.jobDesc{
+    padding-left: 1rem!important;
+    margin-left: 1rem!important;
+}
+
+.jobDesc::marker{
+  background-image:none !important;
+  content: "\f0da"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  transform: none;
+
 }
