@@ -59,3 +59,15 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+.dateWorkExp{
+    white-space: nowrap;
+    width:100%; 
+    
+}
+
+@media (min-width: 768px) {
+    .dateWorkExp{
+        text-align:right;
+    }
+}
