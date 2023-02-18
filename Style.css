@@ -45,18 +45,20 @@
 }
 
 .desc::marker{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+
   background-image:none !important;
   content: "\f0da"; 
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   transform: none;
 
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit; 
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
 .subDesc::marker{
