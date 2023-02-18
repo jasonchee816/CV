@@ -31,7 +31,7 @@
     font-size: 1rem!important;
     color: #212529;
     font-weight: 500;
-    white-space: nowrap;
+    white-space: normal;
     width:100%;
 }
 
@@ -67,26 +67,7 @@
     scrollbar-width: none;  /* Firefox */
   }
 
-.dateWorkExp{
-    white-space: nowrap;
-    width:100%; 
-    
-}
 
-@media (min-width: 768px) {
-    .dateWorkExp{
-        text-align:right;
-    }
-}
-
-
-.workTitle {
-    font-size: 1rem !important;
-    color: #212529;
-    font-weight: 500;
-    white-space: normal;
-    width: 100%;
-}
 
 .arrowUpToDownAni{
     /* animation: spin 0.5s forwards linear; */
