@@ -44,7 +44,7 @@
     margin-left: 1rem!important;
 }
 
-.desc::marker{
+.desc::before{
     display: inline-block;
     font-size: inherit; 
     text-rendering: optimizeLegibility;
