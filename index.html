@@ -26,12 +26,10 @@
 
 </head>
 
-<body class="vh-100 bg-light">
+<body class="vh-100 bg-dark text-light">
     <div class="container-fluid position-relative" style="overflow-x: hidden;">
         <div class="row flex-nowrap vh-100">
             <div class="row">
-
-
                 <!--Left Page-->
                 <div class="leftPage(s) col-lg-6 pt-3 mt-3 pe-5 ms-3 ms-lg-0">
                     <div class="profileSection row justify-content-center">
@@ -64,13 +62,27 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-12">
+                                            <div class="col-12 mb-3">
                                                 <a href="mailto:jasonchee01@hotmail.com"
                                                     class="btn btn-danger text-start col-12" target="_blank">
                                                     <i class="fas fa-envelope" style="color: #fff"></i>
                                                     <span class="mx-3" style="word-break: break-word">Email</span>
                                                 </a>
                                             </div>
+                                        </div>
+                                        <div class="themeCol row justify-content-center d-flex">
+                                            <div class="col-6">
+                                                <label class="switch">
+
+                                                    <input type="checkbox" id="theme" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                            <div class="col-6">
+                                                <span id="themeText">Dark Mode</span>
+
+                                            </div>
+
                                         </div>
                                     </div>
 
@@ -155,7 +167,7 @@
                     <div class="workingExpSection row mt-2">
                         <a href="#workExpSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
-                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                <div class="col-12 titleDiv shadow-sm p-3 rounded-pill mb-3">
                                     <span class="titleCardText">Working Experience</span>
                                     <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
                                 </div>
@@ -164,7 +176,7 @@
 
                         <div class="row collapse" id="workExpSubMenu">
                             <div class="col-12 ps-4 ps-lg-3">
-                                <div class="row mb-1">
+                                <div class="row">
                                     <div class="col-12">
                                         <span class="title">Software Engineer @ ARB Axflix</p>
                                     </div>
@@ -184,7 +196,7 @@
                             </div>
 
                             <div class="col-12 ps-4 ps-lg-3 mt-3">
-                                <div class="row mb-1">
+                                <div class="row">
                                     <div class="col-12">
                                         <span class="title">Web Application Developer
                                             Intern @ Public Bank Information
@@ -287,7 +299,7 @@
                     <div class="awardsActivitiesSection row mt-3">
                         <a href="#awardsSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
-                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                <div class="col-12 titleDiv shadow-sm p-3 rounded-pill mb-3">
                                     <span class="titleCardText">Awards / Activities</span>
                                     <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
                                 </div>
@@ -434,7 +446,7 @@
                     <div class="techSkillSection row mt-3">
                         <a href="#techSkillSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
-                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                <div class="col-12 titleDiv shadow-sm p-3 rounded-pill mb-3">
                                     <span class="titleCardText">Technical Skills</span>
                                     <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
                                 </div>
@@ -538,7 +550,7 @@
                     <div class="projectSection row mt-3">
                         <a href="#projectSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
-                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                <div class="col-12 titleDiv shadow-sm p-3 rounded-pill mb-3">
                                     <span class="titleCardText">Projects</span>
                                     <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
                                 </div>
@@ -652,7 +664,7 @@
                     <div class="educationSection row mt-3">
                         <a href="#eduSubMenu" data-bs-toggle="collapse" class="text-decoration-none">
                             <div class="row">
-                                <div class="col-12 titleDiv bg-white shadow-sm p-3 rounded-pill mb-3">
+                                <div class="col-12 titleDiv shadow-sm p-3 rounded-pill mb-3">
                                     <span class="titleCardText">Education</span>
                                     <i class="fas fa-chevron-circle-down float-end mt-3 me-3"></i>
                                 </div>
@@ -723,24 +735,38 @@
 
     <script>
 
-        $(".collapse").on("show.bs.collapse", function () {
-            $(".collapse").not(this).collapse("hide");
-            // this.scrollIntoView();
-            $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-white').addClass('bg-dark').children().css('color', '#fff');
-            // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
-            $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowDownToUpAni").addClass("arrowUpToDownAni");
-            $(this).focus();
-        });
-
-        $(".collapse").on("hide.bs.collapse", function () {
-            $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-dark').addClass('bg-white').children().css('color', '#212529');
-            // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
-            $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowUpToDownAni").addClass("arrowDownToUpAni");
-            $(this).focus();
-        });
-
         $(document).ready(function () {
+            $(".titleDiv").addClass("titleDivDark");
 
+            $(".collapse").on("show.bs.collapse", function () {
+                $(".collapse").not(this).collapse("hide");
+                // this.scrollIntoView();
+                // $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-white').addClass('bg-dark').children().css('color', '#fff');
+                // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
+                $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowDownToUpAni").addClass("arrowUpToDownAni");
+                $(this).focus();
+            });
+
+            $(".collapse").on("hide.bs.collapse", function () {
+                // $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-dark').addClass('bg-white').children().css('color', '#212529');
+                // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
+                $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowUpToDownAni").addClass("arrowDownToUpAni");
+                $(this).focus();
+            });
+
+            $("#theme").change(function () {
+                if (this.checked) {
+                    $("body").removeClass('bg-white').addClass('bg-dark').removeClass("text-dark").addClass("text-light");
+                    $(".titleDivLight").removeClass('titleDivLight').addClass('titleDivDark')
+                    $("#themeText").html("Dark Mode")
+                }
+                else {
+                    $("body").removeClass('bg-dark').addClass('bg-white').removeClass("text-light").addClass("text-dark");
+                    $(".titleDivDark").removeClass('titleDivDark').addClass('titleDivLight')
+                    $("#themeText").html("Light Mode")
+
+                }
+            })
         })
     </script>
 </body>
