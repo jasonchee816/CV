@@ -206,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div class="row ps-3">
-                                    <ul class="list-group" style="list-style:none">
+                                    <ul class="list-group">
                                         <li class="desc">
                                             Improved performance for data retrieval request handling
                                         </li>
@@ -725,14 +725,6 @@
     <script>
 
         $(document).ready(function () {
-            function isiOS() {
-                // Check for specific iOS features or capabilities
-                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            }
-
-
-            if (isiOS())
-                $('head').append('<style>.desc::before{content:"-" !important}</style>');
 
             $(".titleDiv").addClass("titleDivDark");
 
