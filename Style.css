@@ -67,7 +67,7 @@ a:hover { color: inherit; }
 
 }
 
-.subDesc::marker{
+.subDesc:marker{
     background-color: black;
   }
 
