@@ -725,6 +725,15 @@
     <script>
 
         $(document).ready(function () {
+            function isiOS() {
+                // Check for specific iOS features or capabilities
+                return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+            }
+
+
+            if (isiOS())
+                $('head').append('<style>.desc::marker{content:"-" !important}</style>');
+
             $(".titleDiv").addClass("titleDivDark");
 
             $(".collapse").on("show.bs.collapse", function () {
@@ -756,6 +765,8 @@
 
                 }
             })
+
+
         })
     </script>
 </body>

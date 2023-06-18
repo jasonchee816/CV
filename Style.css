@@ -58,9 +58,8 @@ a:hover { color: inherit; }
     -moz-osx-font-smoothing: grayscale;   
 
   background-image:none !important;
-  /* content: "\f0da"; 
-  font-family: "Font Awesome 5 Free"; */
-  content: "-";
+  content: "\f0da"; 
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   transform: none;
   width: 8px;
