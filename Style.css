@@ -15,6 +15,7 @@ a:hover { color: inherit; }
     font-size: 1.75rem!important;
     /* color: #212529; */
     font-weight: 500;
+    padding-left: 1vw;
 }
 
 .titleDivDark {
