@@ -27,15 +27,15 @@ a:hover { color: inherit; }
 }
 
 .titleDivLight {
-    background-color: #ececec!important; 
-}
-
-.titleDivLight:hover {
     background-color: #dedede!important; 
 }
 
+.titleDivLight:hover {
+    background-color: #cdcdcd!important; 
+}
+
 .title{
-    font-size: 1rem!important;
+    font-size: 1.2rem!important;
     /* color: #212529; */
     font-weight: 500;
     white-space: normal;
