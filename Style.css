@@ -46,11 +46,13 @@ a:hover { color: inherit; }
     margin-top: 0.25rem!important;
 }
 
+.subDesc{
+    padding-right: 0.25rem!important;
+}
+
 .desc, .subDesc{
-    padding-left: 1rem!important;
-    margin-left: 1rem!important;
-    padding-right: 1rem!important;
-    margin-right: 1rem!important;
+    padding-left: 0.75rem!important;
+    margin-left: 0.75rem!important;
     text-align: justify;
 }
 
