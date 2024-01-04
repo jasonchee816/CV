@@ -185,7 +185,7 @@
                                 <div class="row ps-3">
                                     <ul class="list-group">
                                         <li class="desc">
-                                            Wrote, Built, and Released a Membership App on 
+                                            Developed, Built, and Released a Membership App on 
                                             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.membershipapp" >
                                             Play Store</a> / 
                                             <a target="_blank" href="https://apps.apple.com/my/app/pasaraya-ku/id1492922738" >
@@ -810,16 +810,15 @@
 
             $(".collapse").on("show.bs.collapse", function () {
                 $(".collapse").not(this).collapse("hide");
-                // this.scrollIntoView();
-                // $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-white').addClass('bg-dark').children().css('color', '#fff');
-                // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-down").addClass("fa-chevron-circle-up");
                 $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowDownToUpAni").addClass("arrowUpToDownAni");
-                $(this).focus();
             });
 
+            $(".collapse").on("shown.bs.collapse", function () {
+                this.parentElement.scrollIntoView({behavior: 'smooth'});
+            });
+
+
             $(".collapse").on("hide.bs.collapse", function () {
-                // $(this).siblings('a').children('div.row').children('div.titleDiv').removeClass('bg-dark').addClass('bg-white').children().css('color', '#212529');
-                // $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("fa-chevron-circle-up").addClass("fa-chevron-circle-down");
                 $(this).siblings("a").children("div.row").children("div.titleDiv").children("i").removeClass("arrowUpToDownAni").addClass("arrowDownToUpAni");
                 $(this).focus();
             });
