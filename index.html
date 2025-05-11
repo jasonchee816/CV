@@ -69,16 +69,12 @@
                                             </div>
                                         </div>
                                         <div class="themeCol row justify-content-center d-flex">
-                                            <div class="col-6">
+                                            <div class="col-12">
                                                 <label class="switch">
-
                                                     <input type="checkbox" id="theme" checked>
                                                     <span class="slider round"></span>
                                                 </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <span id="themeText">Dark Mode</span>
-
+                                                <i id="themeText" class="fa-solid fa-moon ps-2"></i>
                                             </div>
 
                                         </div>
@@ -940,12 +936,12 @@
                 if (this.checked) {
                     $("body").removeClass('bg-white').addClass('bg-dark').removeClass("text-dark").addClass("text-light");
                     $(".titleDivLight").removeClass('titleDivLight').addClass('titleDivDark')
-                    $("#themeText").html("Dark Mode")
+                    $("#themeText").removeClass("fa-sun").addClass("fa-moon")
                 }
                 else {
                     $("body").removeClass('bg-dark').addClass('bg-white').removeClass("text-light").addClass("text-dark");
                     $(".titleDivDark").removeClass('titleDivDark').addClass('titleDivLight')
-                    $("#themeText").html("Light Mode")
+                    $("#themeText").removeClass("fa-moon").addClass("fa-sun")
 
                 }
             })
