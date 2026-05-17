@@ -23,6 +23,34 @@ const WorkingExperience: React.FC = () => {
           subItems: [
             'Replaced current Third-party Merchant for Online Deals',
             'Greatly increased earnings with the new offers',
+            'Delivered $1,100,000 in gross sales through online deals functionalities within the short period of 6 months',
+          ],
+        },
+        {
+          text: 'Implemented Native Widgets on both iOS and Android platforms',
+          subItems: [
+            'Gained out-of-app presence by implementing Widgets on both iOS and Android platforms',
+            'More than 12,000 users added Widgets into their Home Screen',
+            'Paved the way for future Widgets implementation',
+          ],
+        },
+        {
+          text: 'Improved Existing Codebase',
+          subItems: [
+            'Enhanced test coverage from 49% to 78% by adding end-to-end Flow tests',
+            'Improved maintainability by cleaning up unused codes and feature flags',
+            'Resolved Flaky Test Cases that fail intermittently on CI/CD pipeline',
+            'Resolved bugs where exported GIF is missing on iOS App',
+            'Created monitoring for conversion rates, mobile app reliability, endpoints, and missing translations',
+          ],
+        },
+        {
+          text: 'Improved Developers\' Experience (DX)',
+          subItems: [
+            'Created scripts and AI skills for tasks that disrupt developers\' efficiency',
+            'Optimized CI/CD duration by improving test case setup, cutting down around 20% of test duration',
+            'Further improved DX by proposing and adopting a new architecture that allows engineers to gradually adopt modern hook approaches while co-existing with legacy Saga approaches',
+            'Set up engineering standards via Agent rules',
           ],
         },
         {
@@ -45,15 +73,6 @@ const WorkingExperience: React.FC = () => {
           subItems: [
             'Implemented Alphabetically Sorted Contact List with both Scroll-To and Search Functionality',
             'Implemented Multi-Request Flow, which includes Split Equally, Split Evenly, and Custom Amount',
-          ],
-        },
-        {
-          text: 'Improved Existing Codebase',
-          subItems: [
-            'Enhanced test coverage from 49% to 63% by adding end-to-end Flow tests',
-            'Improved maintainability by cleaning up unused codes and feature flags',
-            'Resolved Flaky Test Cases that fail intermittently on CI/CD pipeline',
-            'Resolved bugs where exported GIF is missing on iOS App',
           ],
         },
       ],

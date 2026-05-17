@@ -191,9 +191,8 @@ const ProfileModal: React.FC<ProfileModalProps> = ({ children }) => {
               <Divider sx={{ mb: 2 }} />
               <Typography variant="body2" paragraph>
                 To be an Engineer that can lead a team and be involved in different aspects of Software
-                Development. Seeking a position in a firm where I am able to utilize
-                my skills to contribute to the company while having the scope to develop my
-                own skills.
+                Development. Seeking a position in a firm where I can contribute to the company 
+                while working my way up to grow my people management skills.
               </Typography>
             </Box>
 
