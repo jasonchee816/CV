@@ -40,7 +40,6 @@ const WorkingExperience: React.FC = () => {
             'Enhanced test coverage from 49% to 78% by adding end-to-end Flow tests',
             'Improved maintainability by cleaning up unused codes and feature flags',
             'Resolved Flaky Test Cases that fail intermittently on CI/CD pipeline',
-            'Resolved bugs where exported GIF is missing on iOS App',
             'Created monitoring for conversion rates, mobile app reliability, endpoints, and missing translations',
           ],
         },
