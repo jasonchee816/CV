@@ -30,7 +30,7 @@ const WorkingExperience: React.FC = () => {
           text: 'Implemented Native Widgets on both iOS and Android platforms',
           subItems: [
             'Gained out-of-app presence by implementing Widgets on both iOS and Android platforms',
-            'More than 12,000 users added Widgets into their Home Screen',
+            '12,000 monthly active users added Widgets into their Home Screen',
             'Paved the way for future Widgets implementation',
           ],
         },
